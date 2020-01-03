@@ -63,7 +63,7 @@ public class LoginPage extends TestBase {
 		}
 		
 		
-		public HomePage login(String usr, String pwd) 
+		public void login(String usr, String pwd) 
 		{
 			Username.sendKeys(usr);
 			Password.sendKeys(pwd);
@@ -71,7 +71,15 @@ public class LoginPage extends TestBase {
 			//JavascriptExecutor js = (JavascriptExecutor)driver;
 			//js.executeScript("arguments[0].click();", Signin);					
 
-			return new HomePage();
+			if(validateLoginPageTitle().contains("Verify Your Identity | Salesforce")){
+				YopOTP objOTP = new YopOTP("yopurl");
+				String code = 		objOTP.getotp(usr);
+				OTPText.sendKeys(code);
+				Save.click();	
+			}else{
+				//return new HomePage();
+			}
+			//return new HomePage();
 		}
 		
 		
