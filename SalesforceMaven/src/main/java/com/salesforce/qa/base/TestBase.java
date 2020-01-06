@@ -15,6 +15,7 @@ import com.salesforce.qa.util.*;
 public class TestBase {
 
 	public static WebDriver driver;
+	public static WebDriver yopdriver;
 	public static Properties prop;
 	public static EventFiringWebDriver e_driver;
 	public static WebEventListener eventListener;
@@ -36,7 +37,7 @@ public class TestBase {
 	}
 	
 	
-	public static void initialization(String url){
+	public static void initialization(){
 		String browserName = prop.getProperty("browser");
 		
 		if(browserName.equals("chrome")){
@@ -59,7 +60,34 @@ public class TestBase {
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);		
-		driver.get(prop.getProperty(url));
+		driver.get(prop.getProperty("url"));
+		
+}
+	
+	public static void Yopinitialization(){
+		String browserName = prop.getProperty("browser");
+		
+		if(browserName.equals("chrome")){
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/src/main/java/com/salesforce/qa/driver/chromedriver.exe");
+			yopdriver = new ChromeDriver(); 
+		}
+		else if(browserName.equals("FF")){
+			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "/src/main/java/com/salesforce/qa/driver/geckodriver.exe");	
+			yopdriver = new FirefoxDriver(); 
+		}
+		
+		
+		e_driver = new EventFiringWebDriver(yopdriver);
+		// Now create object of EventListerHandler to register it with EventFiringWebDriver
+		eventListener = new WebEventListener();
+		e_driver.register(eventListener);
+		yopdriver = e_driver;
+		
+		yopdriver.manage().window().maximize();
+		yopdriver.manage().deleteAllCookies();
+		yopdriver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
+		yopdriver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);		
+		yopdriver.get(prop.getProperty("yopurl"));
 		
 }
 }

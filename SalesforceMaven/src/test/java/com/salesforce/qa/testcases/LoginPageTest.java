@@ -22,9 +22,10 @@ public class LoginPageTest extends TestBase{
 	
 	@BeforeMethod
 	public void setUp(){
-		initialization("url");
+		initialization();
 		loginPage = new LoginPage();
 		//homepage = new HomePage();
+		HomePage homepage;
 		
 	}
 	
@@ -34,11 +35,11 @@ public class LoginPageTest extends TestBase{
 		
 		Assert.assertEquals(true, loginPage.validateSalesForceLogo());
 		
-		loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
+		homepage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 		
-	//	homepage.validateHomePageTitle();
-		String home = homepage.validateHomePageTitle();
-		Assert.assertEquals("Home Page ~ Sales Force - Developer Edition", homepage.validateHomePageTitle());
+		//	homepage.validateHomePageTitle();
+		//home = homepage.validateHomePageTitle();
+		Assert.assertEquals("Home Page ~ Salesforce - Developer Edition", homepage.validateHomePageTitle());
 	}
 	
 	

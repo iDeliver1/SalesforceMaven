@@ -20,19 +20,19 @@ public class YopOTP  extends TestBase {
 	WebElement yopotp;
 	
 	
-	public YopOTP(String url) {
-		initialization(url);
+	public YopOTP() {
+		Yopinitialization();
 		
 	}
 
 	public String getotp(String username){
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(yopdriver, this);
 		yopuser.sendKeys(username);
 		yopbtn.click();
-		driver.switchTo().frame(2);
+		yopdriver.switchTo().frame(2);
 		String code = yopotp.getText();
 		code = code.substring(290, 316).replaceAll("[^0-9]", "");
-		driver.close();
+		yopdriver.close();
 		return code;
 	}
 	
