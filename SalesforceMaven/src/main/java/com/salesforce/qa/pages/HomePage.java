@@ -13,6 +13,9 @@ public class HomePage extends TestBase{
 	@FindBy(xpath="//li[@id='home_Tab']//a[contains(text(),'Home')]")
 	WebElement HomeLink;
 	
+	@FindBy(xpath= "//li[@id='Campaign_Tab']")
+	WebElement CampaignsLink;
+	
 	@FindBy(xpath= "//li[@id='Lead_Tab']//a[contains(text(),'Leads')]")
 	WebElement LeadsLink;
 	
@@ -45,6 +48,11 @@ public class HomePage extends TestBase{
 			
 			public boolean verifyCorrectUserName(){
 				return SalesForceHomeLogo.isDisplayed();
+			}
+			
+			public CampaignsPage clickOnCampaignsLink(){
+				CampaignsLink.click();
+				return new CampaignsPage();
 			}
 			
 			public LeadsPage clickOnLeadsLink(){

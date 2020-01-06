@@ -7,6 +7,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import com.salesforce.qa.pages.CampaignsPage;
 import com.salesforce.qa.pages.HomePage;
 import com.salesforce.qa.pages.LeadsPage;
 import com.salesforce.qa.pages.LoginPage;
@@ -26,6 +27,7 @@ public class LoginPageTest extends TestBase{
 	LoginPage loginPage;
 	HomePage homepage;
 	LeadsPage leadspage;
+	CampaignsPage campaignspage;
 	Utility_Libraries utilityobject = new Utility_Libraries();
 	
 	public LoginPageTest(){
@@ -71,6 +73,24 @@ public class LoginPageTest extends TestBase{
 				logger.log(Status.FAIL, "Leads page is not open ");
 			}
 		leadspage.CreateLeads("Aviraj", "Lall", "iDeliver", "Open - Not Contacted", "Lall");		
+	}
+	
+	@Test(priority=3)
+	public void CampaignsTest(){
+			
+		logger = extent.createTest("CampaignsTest");
+		logger.log(Status.PASS, "CreateCampaigns");
+		campaignspage = homepage.clickOnCampaignsLink();
+			if(campaignspage.validateCampaignsPageTitle().contains("Campaigns: Home ~ Salesforce - Developer Edition"))
+			{
+				logger.log(Status.PASS, "campaigns page is open "+ campaignspage.validateCampaignsPageTitle());
+			}
+			else
+			{
+				logger.log(Status.FAIL, "campaignspage page is not open ");
+			}
+			campaignspage.CreateCampign("idc");
+				
 	}
 	
 	@AfterMethod
