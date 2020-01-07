@@ -1,11 +1,13 @@
 package com.salesforce.qa.pages;
 
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 import com.salesforce.qa.base.TestBase;
+import com.salesforce.qa.util.Utility_Libraries;
 
 public class LeadsPage extends TestBase {
 	@FindBy(xpath="//li[@id='Lead_Tab']")
@@ -37,6 +39,36 @@ public class LeadsPage extends TestBase {
 	
 	@FindBy(xpath="//div[@class='textBlock']/h2")
 	WebElement HeadName;
+	
+	@FindBy(xpath="//td[@id='topButtonRow']//input[@name='convert']")
+	WebElement Convertbtn;
+	
+	@FindBy(xpath="//td[@id='topButtonRow']//input[@name='convert']")
+	WebElement OppurnityName;
+	
+	@FindBy(xpath="//select[@id='accid']")
+	WebElement Account;
+	
+	@FindBy(xpath="//input[@id='tsk5_fu']")
+	WebElement Subject;
+	
+	@FindBy(xpath="//select[@id='tsk12_fu']")
+	WebElement StatusConvert;
+	
+	@FindBy(xpath="//td[@id='acc2_ilecell']")
+	WebElement UpdateClick;
+	
+	@FindBy(xpath=" //td[@id='topButtonRow']//input[@name='inlineEditSave']")
+	WebElement UpdateSave;
+	
+	@FindBy(xpath=" //td[@id='topButtonRow']//input[@name='save']")
+	WebElement ConvertSave;
+	
+	@FindBy(xpath=" //input[@id='acc2']")
+	WebElement AccountName;
+	
+	@FindBy(xpath=" //h2[@class='topName']")
+	WebElement AccountHeader;
 	
 	
 	public LeadsPage(){
@@ -95,13 +127,53 @@ public class LeadsPage extends TestBase {
 					//Utility_Object.fReportfail("Lead create", "Lead is not successfully created", logger, driver, Extndreport);
 					//------------------------------------
 				}
+				
+				try{
+					Convertbtn.click();
+					
+					try{
+						
+						OppurnityName.sendKeys("idc"+Utility_Libraries.fTimestamp());
+						Account.click();
+						Subject.click();
+						StatusConvert.click();
+						ConvertSave.click();
+						
+						try{
+							Actions objDbclck = new Actions(driver);
+							objDbclck.moveToElement(UpdateClick).doubleClick().build().perform();
+							AccountName.clear();
+							String NewAccountName = "iDeliver"+Utility_Libraries.fTimestamp();
+							AccountName.sendKeys(NewAccountName);
+							UpdateSave.click();
+							
+							String AccountName = AccountHeader.getText();
+							
+							if(AccountName.contains(NewAccountName))
+							{
+								//-----------------------------Reporter
+								//Utility_Object.fReportpass("Lead create", "Lead is successfully created", logger, driver);
+								//------------------------------------
+							}
+							else
+							{
+								
+								//-----------------------------Reporter
+								//Utility_Object.fReportfail("Lead create", "Lead is not successfully created", logger, driver, Extndreport);
+								//------------------------------------
+							}
+							
+						}catch (Exception D){
+							//Report
+						}
+						
+					}catch (Exception D){
+						//Report
+					}
+				}catch (Exception D){
+					//Report
+				}
 		}
-		//catch(Exception E)
-		//{
-			//-----------------------------Reporter
-			//System.out.println(E);
-			//------------------------------------
-		//}
-	//}
+		
 
 }

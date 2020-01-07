@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.salesforce.qa.base.TestBase;
+import com.salesforce.qa.util.Utility_Libraries;
 
 public class CampaignsPage extends TestBase {
 
@@ -37,6 +38,7 @@ public class CampaignsPage extends TestBase {
 	WebElement UpdateSave ;
 	
 	
+	
 	public CampaignsPage() {
 		PageFactory.initElements(driver, this);
 	}
@@ -44,8 +46,9 @@ public class CampaignsPage extends TestBase {
 	public String validateCampaignsPageTitle(){
 		return driver.getTitle();
 	}
-	public void CreateCampign(String CampignName){
-//		try
+	public String CreateCampign(String CampignName){
+	String 	CampignName1 = CampignName+ Utility_Libraries.fTimestamp();	
+		//try
 //		{
 //			CampginTab.click();
 				try
@@ -74,7 +77,7 @@ public class CampaignsPage extends TestBase {
 					//Utility_Object.fReportfail("Create Lead", "Error :" + e +" Create Lead page is not open successfully", logger, driver, Extndreport);
 					//------------------------------------
 				}
-				CampName.sendKeys(CampignName);
+				CampName.sendKeys(CampignName1);
 				StartDate.sendKeys("01/06/2020");
 				SaveBtn.click();
 		
@@ -92,14 +95,9 @@ public class CampaignsPage extends TestBase {
 				}catch(Exception E){
 					//Report
 				}
+				return CampignName1;
 		}
 		
 		
-//		catch(Exception E)
-//		{
-//			//-----------------------------Reporter
-//			System.out.println(E);
-//			//------------------------------------
-//		}
-//	}
+
 }
