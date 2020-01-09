@@ -16,7 +16,7 @@ public class HomePage extends TestBase{
 	@FindBy(xpath= "//li[@id='Campaign_Tab']")
 	WebElement CampaignsLink;
 	
-	@FindBy(xpath= "//li[@id='Lead_Tab']//a[contains(text(),'Leads')]")
+	@FindBy(xpath= "//li[@id='Lead_Tab']")
 	WebElement LeadsLink;
 	
 	@FindBy(xpath= "//li[@id='Account_Tab']//a[contains(text(),'Accounts')]")
@@ -30,6 +30,9 @@ public class HomePage extends TestBase{
 	
 	@FindBy(xpath= "//li[@id='Order_Tab']//a[contains(text(),'Orders')]")
 	WebElement OrderLink;
+	
+	@FindBy(xpath= "//li[@id='Contract_Tab']//a[contains(text(),'Contracts')]")
+	WebElement ContractLink;
 	
 	@FindBy(xpath= "//a[contains(text(),'Logout')]")
 	WebElement LogoutLink;
@@ -79,6 +82,12 @@ public class HomePage extends TestBase{
 				OrderLink.click();
 				return new OrderPage();
 			}
+			
+			public ContractsPage clickOnContractLink(){
+				ContractLink.click();
+				return new ContractsPage();
+			}
+			
 			public LogoutPage clickOnLogoutLink(){
 				LogoutLink.click();
 				return new LogoutPage();

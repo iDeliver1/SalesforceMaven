@@ -1,28 +1,29 @@
 package com.salesforce.qa.testcases;
 
+import java.util.concurrent.TimeUnit;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import com.salesforce.qa.pages.CampaignsPage;
+import com.salesforce.qa.pages.ContractsPage;
 import com.salesforce.qa.pages.HomePage;
 import com.salesforce.qa.pages.LeadsPage;
 import com.salesforce.qa.pages.LoginPage;
-import com.salesforce.qa.util.Utility_Libraries;
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.Status;
+import com.salesforce.qa.pages.OrderPage;
+import com.salesforce.qa.util.Extent_reporter;
+import com.salesforce.qa.util.TestUtil;
 import com.salesforce.qa.base.TestBase;
 
 public class LoginPageTest extends TestBase{
 	
-	ExtentReports extent;
-	ExtentTest logger;
 	LoginPage loginPage;
 	HomePage homepage;
 	LeadsPage leadspage;
 	CampaignsPage campaignspage;
-	Utility_Libraries utilityobject = new Utility_Libraries();
-	String CampName;
+	ContractsPage contractpage;
+	OrderPage orderpage;
+	String CampName,Account,OrderNo,Contract;
+	
 	public LoginPageTest(){
 		super();
 	}
@@ -30,67 +31,58 @@ public class LoginPageTest extends TestBase{
 	@BeforeTest
 	public void setUp(){
 		initialization();
-		extent = utilityobject.fReport();
 		loginPage = new LoginPage();
 	}
 	
 	@Test(priority=1)
-	public void LoginTest(){
-		
-		logger = extent.createTest("Login");
-		logger.log(Status.PASS, "Login ");
-		homepage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));		
-			if(homepage.validateHomePageTitle().contains("Home Page ~ Salesforce - Developer Edition"))
-			{
-				logger.log(Status.PASS, "Login Succesfull Home page is open "+homepage.validateHomePageTitle());
-			}
-			else
-			{
-				logger.log(Status.FAIL, "Login Succesfull Home page is not open ");
-			}
+	public void LoginTest() throws Throwable{
+		getReportname(new Object(){}.getClass().getEnclosingMethod().getName());
+		homepage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));	
+		Extent_reporter.validation("Login Page Validation",homepage.validateHomePageTitle(), "Home Page ~ Salesforce - Developer Edition");
 	}
 	
 	
 	@Test(priority=2)
-	public void CampaignsTest(){
-		
-		logger = extent.createTest("CampaignsTest");
-		logger.log(Status.PASS, "CreateCampaigns");
+	public void CampaignsTest() throws Throwable{
+		getReportname(new Object(){}.getClass().getEnclosingMethod().getName());
 		campaignspage = homepage.clickOnCampaignsLink();
-			if(campaignspage.validateCampaignsPageTitle().contains("Campaigns: Home ~ Salesforce - Developer Edition"))
-			{
-				logger.log(Status.PASS, "campaigns page is open "+ campaignspage.validateCampaignsPageTitle());
-			}
-			else
-			{
-				logger.log(Status.FAIL, "campaignspage page is not open ");
-			}
-			CampName = 		campaignspage.CreateCampign(prop.getProperty("campigan"));
-				
+		Extent_reporter.validation("Campaigns Page Validation",campaignspage.validateCampaignsPageTitle(), "Campaigns: Home ~ Salesforce - Developer Edition");
+		CampName = 		campaignspage.CreateCampign(prop.getProperty("campigan"));		
 	}
 	
 	
 	@Test(priority=3)
-	public void LeadTest(){
-		
-		logger = extent.createTest("CreateLeads");
-		logger.log(Status.PASS, "CreateLeads");
+	public void LeadTest() throws Throwable{
+		getReportname(new Object(){}.getClass().getEnclosingMethod().getName());
+		Thread.sleep(2000);
 		leadspage = homepage.clickOnLeadsLink();
-			if(leadspage.validateLeadsPageTitle().contains("Leads: Home ~ Salesforce - Developer Edition"))
-			{
-				logger.log(Status.PASS, "Leads page is open "+ leadspage.validateLeadsPageTitle());
-			}
-			else
-			{
-				logger.log(Status.FAIL, "Leads page is not open ");
-			}
-		leadspage.CreateLeads("Aviraj", "Lall", "iDeliver", "Open - Not Contacted", CampName);		
+		Extent_reporter.validation("Leads Page Validation",leadspage.validateLeadsPageTitle(), "Leads: Home ~ Salesforce - Developer Edition");
+		Account =	leadspage.CreateLeads("Aviraj", "Red", "iDeliver", "Open - Not Contacted", CampName);		
+	}
+	
+	@Test(priority=4)
+	public void ContratTest() throws Throwable {
+		getReportname(new Object(){}.getClass().getEnclosingMethod().getName());
+		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT,TimeUnit.SECONDS) ;
+		contractpage = homepage.clickOnContractLink();
+		Extent_reporter.validation("Contract Page Validation",contractpage.validateContratsPageTitle(), "Contracts: Home ~ Salesforce - Developer Edition");
+		Contract= contractpage.CreateContact(Account);
+	}
+	
+	
+	@Test(priority=5)
+	public void OrderTest() throws Throwable{
+		getReportname(new Object(){}.getClass().getEnclosingMethod().getName());
+		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT,TimeUnit.SECONDS) ;
+		orderpage = homepage.clickOnOrderLink();
+		Extent_reporter.validation("Order Page Validation",orderpage.validateOrderPageTitle(), "Orders: Home ~ Salesforce - Developer Edition");
+		OrderNo=orderpage.CreateOrder(Account, Contract);
 	}
 	
 	@AfterMethod
 	public void Flush()
 	{
-		extent.flush();
+		Extent_reporter.flushextent();
 	}
 
 }

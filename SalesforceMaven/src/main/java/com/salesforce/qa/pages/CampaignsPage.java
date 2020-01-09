@@ -4,9 +4,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
 import com.salesforce.qa.base.TestBase;
-import com.salesforce.qa.util.Utility_Libraries;
+import com.salesforce.qa.util.Gernric_functions;
 
 public class CampaignsPage extends TestBase {
 
@@ -47,7 +46,7 @@ public class CampaignsPage extends TestBase {
 		return driver.getTitle();
 	}
 	public String CreateCampign(String CampignName){
-	String 	CampignName1 = CampignName+ Utility_Libraries.fTimestamp();	
+	String 	CampignName1 = CampignName+ Gernric_functions.fTimestamp();	
 		//try
 //		{
 //			CampginTab.click();

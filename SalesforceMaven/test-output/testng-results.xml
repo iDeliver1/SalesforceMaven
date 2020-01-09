@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="182379" started-at="2020-01-09T13:50:29Z" finished-at="2020-01-09T13:53:31Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="182379" started-at="2020-01-09T13:50:29Z" finished-at="2020-01-09T13:53:31Z">
+      <class name="com.salesforce.qa.testcases.LoginPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.salesforce.qa.testcases.LoginPageTest@475530b9]" name="setUp" is-config="true" duration-ms="28803" started-at="2020-01-09T19:20:29Z" finished-at="2020-01-09T19:20:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="LoginTest()[pri:1, instance:com.salesforce.qa.testcases.LoginPageTest@475530b9]" name="LoginTest" duration-ms="70196" started-at="2020-01-09T19:20:58Z" finished-at="2020-01-09T19:22:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method status="PASS" signature="Flush()[pri:0, instance:com.salesforce.qa.testcases.LoginPageTest@475530b9]" name="Flush" is-config="true" duration-ms="3024" started-at="2020-01-09T19:22:08Z" finished-at="2020-01-09T19:22:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Flush -->
+        <test-method status="PASS" signature="CampaignsTest()[pri:2, instance:com.salesforce.qa.testcases.LoginPageTest@475530b9]" name="CampaignsTest" duration-ms="29371" started-at="2020-01-09T19:22:11Z" finished-at="2020-01-09T19:22:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CampaignsTest -->
+        <test-method status="PASS" signature="Flush()[pri:0, instance:com.salesforce.qa.testcases.LoginPageTest@475530b9]" name="Flush" is-config="true" duration-ms="86" started-at="2020-01-09T19:22:41Z" finished-at="2020-01-09T19:22:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Flush -->
+        <test-method status="PASS" signature="LeadTest()[pri:3, instance:com.salesforce.qa.testcases.LoginPageTest@475530b9]" name="LeadTest" duration-ms="40427" started-at="2020-01-09T19:22:41Z" finished-at="2020-01-09T19:23:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LeadTest -->
+        <test-method status="PASS" signature="Flush()[pri:0, instance:com.salesforce.qa.testcases.LoginPageTest@475530b9]" name="Flush" is-config="true" duration-ms="59" started-at="2020-01-09T19:23:21Z" finished-at="2020-01-09T19:23:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Flush -->
+        <test-method status="PASS" signature="ContratTest()[pri:4, instance:com.salesforce.qa.testcases.LoginPageTest@475530b9]" name="ContratTest" duration-ms="5311" started-at="2020-01-09T19:23:21Z" finished-at="2020-01-09T19:23:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ContratTest -->
+        <test-method status="PASS" signature="Flush()[pri:0, instance:com.salesforce.qa.testcases.LoginPageTest@475530b9]" name="Flush" is-config="true" duration-ms="70" started-at="2020-01-09T19:23:26Z" finished-at="2020-01-09T19:23:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Flush -->
+        <test-method status="PASS" signature="OrderTest()[pri:5, instance:com.salesforce.qa.testcases.LoginPageTest@475530b9]" name="OrderTest" duration-ms="4806" started-at="2020-01-09T19:23:27Z" finished-at="2020-01-09T19:23:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrderTest -->
+        <test-method status="PASS" signature="Flush()[pri:0, instance:com.salesforce.qa.testcases.LoginPageTest@475530b9]" name="Flush" is-config="true" duration-ms="88" started-at="2020-01-09T19:23:31Z" finished-at="2020-01-09T19:23:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Flush -->
+      </class> <!-- com.salesforce.qa.testcases.LoginPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

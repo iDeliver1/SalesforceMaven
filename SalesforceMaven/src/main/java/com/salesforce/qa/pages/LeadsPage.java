@@ -1,15 +1,14 @@
 package com.salesforce.qa.pages;
 
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
-
 import com.salesforce.qa.base.TestBase;
-import com.salesforce.qa.util.Utility_Libraries;
+import com.salesforce.qa.util.Gernric_functions;
 
 public class LeadsPage extends TestBase {
+	String AccountHeaderName;
 	@FindBy(xpath="//li[@id='Lead_Tab']")
 	WebElement LeadTab ;
 	
@@ -79,10 +78,8 @@ public class LeadsPage extends TestBase {
 		return driver.getTitle();
 	}
 		
-	public void CreateLeads(String FNName, String LNName, String CompanyNName, String SStatus, String CCampaign){
-		//try
-		//{
-			//LeadTab.click();
+	public String CreateLeads(String FNName, String LNName, String CompanyNName, String SStatus, String CCampaign) throws Throwable{
+	
 				try
 				{
 				
@@ -107,7 +104,9 @@ public class LeadsPage extends TestBase {
 				FName.sendKeys(FNName);
 				LName.sendKeys(LNName);
 				Campaign.sendKeys(CCampaign);
-				CompanyName.sendKeys(CompanyNName);
+				
+				String CompAcc = CompanyNName+ Gernric_functions.fTimestamp();
+				CompanyName.sendKeys(CompAcc);
 			Select Status1_ = new Select(  Status);
 			Status1_.selectByValue(SStatus);
 			Save.click();
@@ -128,28 +127,13 @@ public class LeadsPage extends TestBase {
 					//------------------------------------
 				}
 				
-				try{
-					Convertbtn.click();
-					
-					try{
-						
-						OppurnityName.sendKeys("idc"+Utility_Libraries.fTimestamp());
-						Account.click();
-						Subject.click();
-						StatusConvert.click();
-						ConvertSave.click();
-						
 						try{
-							Actions objDbclck = new Actions(driver);
-							objDbclck.moveToElement(UpdateClick).doubleClick().build().perform();
-							AccountName.clear();
-							String NewAccountName = "iDeliver"+Utility_Libraries.fTimestamp();
-							AccountName.sendKeys(NewAccountName);
-							UpdateSave.click();
+							Convertbtn.click();
+							Subject.sendKeys("Other");
+							ConvertSave.click();
+							 AccountHeaderName = AccountHeader.getText();
 							
-							String AccountName = AccountHeader.getText();
-							
-							if(AccountName.contains(NewAccountName))
+							if(AccountHeaderName.contains(CompAcc))
 							{
 								//-----------------------------Reporter
 								//Utility_Object.fReportpass("Lead create", "Lead is successfully created", logger, driver);
@@ -167,12 +151,18 @@ public class LeadsPage extends TestBase {
 							//Report
 						}
 						
-					}catch (Exception D){
-						//Report
-					}
-				}catch (Exception D){
-					//Report
-				}
+						if(AccountHeaderName.isEmpty()){
+							Reporting("FAIL", "Unable to get Account Number" );
+							
+						}
+						else
+						{
+							Reporting("PASS", "Account number is  "+AccountHeaderName);
+							return AccountHeaderName;
+						}
+					
+				return null;
+				
 		}
 		
 

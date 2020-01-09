@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -12,7 +13,7 @@ import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 import com.salesforce.qa.util.*;
 
-public class TestBase {
+public class TestBase  {
 
 	public static WebDriver driver;
 	public static WebDriver yopdriver;
@@ -61,6 +62,7 @@ public class TestBase {
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);		
 		driver.get(prop.getProperty("url"));
+		Extent_reporter.fReport();
 		
 }
 	
@@ -90,4 +92,15 @@ public class TestBase {
 		yopdriver.get(prop.getProperty("yopurl"));
 		
 }
+	
+	public void Reporting(String Status,String StepName) throws Throwable{
+		Extent_reporter.	Report(Status, StepName);
+		
+	}
+	
+	public void getReportname(String Reportname){
+		Extent_reporter.	CreateRoportname(Reportname);
+	}
+	
+	
 }

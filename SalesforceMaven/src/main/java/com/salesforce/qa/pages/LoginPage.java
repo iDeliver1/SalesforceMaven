@@ -2,12 +2,7 @@ package com.salesforce.qa.pages;
 
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
 import com.salesforce.qa.base.TestBase;
 
 public class LoginPage extends TestBase {
@@ -63,21 +58,22 @@ public class LoginPage extends TestBase {
 		}
 		
 		
-		public HomePage login(String usr, String pwd) 
+		public HomePage login(String usr, String pwd) throws Throwable 
 		{
 			Username.sendKeys(usr);
 			Password.sendKeys(pwd);
-			Signin.click();
-			//JavascriptExecutor js = (JavascriptExecutor)driver;
-			//js.executeScript("arguments[0].click();", Signin);					
-
+			Signin.click();	
+		
 			if(validateLoginPageTitle().contains("Verify Your Identity | Salesforce")){
 				YopOTP objOTP = new YopOTP();
 				String code = 		objOTP.getotp(usr);
 				OTPText.sendKeys(code);
 				Save.click();
+				Reporting("Pass", "Yotp is "+code);
 				return new HomePage();
+
 			}else{
+				Reporting("Fail", "Unable to get Yotp ");
 				return new HomePage();
 			}
 			//return new HomePage();
