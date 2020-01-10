@@ -1,53 +1,1013 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results skipped="0" failed="0" total="5" passed="5">
   <reporter-output>
+    <line>
+      <![CDATA[Before navigating to: 'https://login.salesforce.com/?locale=in']]>
+    </line>
+    <line>
+      <![CDATA[Navigated to:'https://login.salesforce.com/?locale=in']]>
+    </line>
+    <line>
+      <![CDATA[-----------------------LoginTest--------------]]>
+    </line>
+    <line>
+      <![CDATA[Logging testing with username - rpatestuser33@yopmail.com]]>
+    </line>
+    <line>
+      <![CDATA[Logging testing with password - iDeliver123]]>
+    </line>
+    <line>
+      <![CDATA[Trying to find Element By : By.xpath: //input[@id='username']]]>
+    </line>
+    <line>
+      <![CDATA[Found Element By : By.xpath: //input[@id='username']]]>
+    </line>
+    <line>
+      <![CDATA[Trying to find Element By : By.xpath: //input[@id='password']]]>
+    </line>
+    <line>
+      <![CDATA[Found Element By : By.xpath: //input[@id='password']]]>
+    </line>
+    <line>
+      <![CDATA[Trying to find Element By : By.xpath: //input[@id='Login']]]>
+    </line>
+    <line>
+      <![CDATA[Found Element By : By.xpath: //input[@id='Login']]]>
+    </line>
+    <line>
+      <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //input[@id='Login']]]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //input[@id='Login']]]]>
+    </line>
+    <line>
+      <![CDATA[Before navigating to: 'http://www.yopmail.com/en/']]>
+    </line>
+    <line>
+      <![CDATA[Navigated to:'http://www.yopmail.com/en/']]>
+    </line>
+    <line>
+      <![CDATA[Trying to find Element By : By.xpath: //input[@id='login']]]>
+    </line>
+    <line>
+      <![CDATA[Found Element By : By.xpath: //input[@id='login']]]>
+    </line>
+    <line>
+      <![CDATA[Trying to find Element By : By.xpath: //input[@class='sbut']]]>
+    </line>
+    <line>
+      <![CDATA[Found Element By : By.xpath: //input[@class='sbut']]]>
+    </line>
+    <line>
+      <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (f2fb8d842f48a136224d1d96cc85042d)] -> xpath: //input[@class='sbut']]]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (f2fb8d842f48a136224d1d96cc85042d)] -> xpath: //input[@class='sbut']]]]>
+    </line>
+    <line>
+      <![CDATA[Trying to find Element By : By.xpath: //div[@id='mailmillieu']/div[2]]]>
+    </line>
+    <line>
+      <![CDATA[Found Element By : By.xpath: //div[@id='mailmillieu']/div[2]]]>
+    </line>
+    <line>
+      <![CDATA[Trying to find Element By : By.xpath: //input[@id='emc']]]>
+    </line>
+    <line>
+      <![CDATA[Found Element By : By.xpath: //input[@id='emc']]]>
+    </line>
+    <line>
+      <![CDATA[Trying to find Element By : By.xpath: //input[@id='save']]]>
+    </line>
+    <line>
+      <![CDATA[Found Element By : By.xpath: //input[@id='save']]]>
+    </line>
+    <line>
+      <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //input[@id='save']]]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //input[@id='save']]]]>
+    </line>
+    <line>
+      <![CDATA[Successful logging with username -  rpatestuser33@yopmail.com]]>
+    </line>
+    <line>
+      <![CDATA[-----------------------CampaignsTest--------------]]>
+    </line>
+    <line>
+      <![CDATA[Trying to find Element By : By.xpath: //li[@id='Campaign_Tab']]]>
+    </line>
+    <line>
+      <![CDATA[Found Element By : By.xpath: //li[@id='Campaign_Tab']]]>
+    </line>
+    <line>
+      <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //li[@id='Campaign_Tab']]]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //li[@id='Campaign_Tab']]]]>
+    </line>
+    <line>
+      <![CDATA[Trying to find Element By : By.xpath: //a[@id='tryLexDialogX']]]>
+    </line>
+    <line>
+      <![CDATA[Found Element By : By.xpath: //a[@id='tryLexDialogX']]]>
+    </line>
+    <line>
+      <![CDATA[Trying to find Element By : By.xpath: //a[@id='tryLexDialogX']]]>
+    </line>
+    <line>
+      <![CDATA[Found Element By : By.xpath: //a[@id='tryLexDialogX']]]>
+    </line>
+    <line>
+      <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //a[@id='tryLexDialogX']]]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //a[@id='tryLexDialogX']]]]>
+    </line>
+    <line>
+      <![CDATA[Trying to find Element By : By.xpath: //input[@title='New']]]>
+    </line>
+    <line>
+      <![CDATA[Found Element By : By.xpath: //input[@title='New']]]>
+    </line>
+    <line>
+      <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //input[@title='New']]]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //input[@title='New']]]]>
+    </line>
+    <line>
+      <![CDATA[Trying to find Element By : By.xpath: //input[@id='cpn1']]]>
+    </line>
+    <line>
+      <![CDATA[Found Element By : By.xpath: //input[@id='cpn1']]]>
+    </line>
+    <line>
+      <![CDATA[Trying to find Element By : By.xpath: //input[@id='cpn1']]]>
+    </line>
+    <line>
+      <![CDATA[Found Element By : By.xpath: //input[@id='cpn1']]]>
+    </line>
+    <line>
+      <![CDATA[Trying to find Element By : By.xpath: //input[@id='cpn5']]]>
+    </line>
+    <line>
+      <![CDATA[Found Element By : By.xpath: //input[@id='cpn5']]]>
+    </line>
+    <line>
+      <![CDATA[Trying to find Element By : By.xpath: //td[@id='bottomButtonRow']/input[@title='Save']]]>
+    </line>
+    <line>
+      <![CDATA[Found Element By : By.xpath: //td[@id='bottomButtonRow']/input[@title='Save']]]>
+    </line>
+    <line>
+      <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //td[@id='bottomButtonRow']/input[@title='Save']]]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //td[@id='bottomButtonRow']/input[@title='Save']]]]>
+    </line>
+    <line>
+      <![CDATA[Trying to find Element By : By.xpath: //td[@id='cpn16_ilecell']]]>
+    </line>
+    <line>
+      <![CDATA[Found Element By : By.xpath: //td[@id='cpn16_ilecell']]]>
+    </line>
+    <line>
+      <![CDATA[Trying to find Element By : By.xpath: //td[@id='cpn16_ilecell']]]>
+    </line>
+    <line>
+      <![CDATA[Found Element By : By.xpath: //td[@id='cpn16_ilecell']]]>
+    </line>
+    <line>
+      <![CDATA[Trying to find Element By : By.xpath: //input[@id='cpn16']]]>
+    </line>
+    <line>
+      <![CDATA[Found Element By : By.xpath: //input[@id='cpn16']]]>
+    </line>
+    <line>
+      <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //input[@id='cpn16']]]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //input[@id='cpn16']]]]>
+    </line>
+    <line>
+      <![CDATA[Trying to find Element By : By.xpath: //td[@id='topButtonRow']//input[@name='inlineEditSave']]]>
+    </line>
+    <line>
+      <![CDATA[Found Element By : By.xpath: //td[@id='topButtonRow']//input[@name='inlineEditSave']]]>
+    </line>
+    <line>
+      <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //td[@id='topButtonRow']//input[@name='inlineEditSave']]]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //td[@id='topButtonRow']//input[@name='inlineEditSave']]]]>
+    </line>
+    <line>
+      <![CDATA[Campaign Number - Campigan10482020054835]]>
+    </line>
+    <line>
+      <![CDATA[-----------------------LeadTest--------------]]>
+    </line>
+    <line>
+      <![CDATA[Trying to find Element By : By.xpath: //li[@id='Lead_Tab']]]>
+    </line>
+    <line>
+      <![CDATA[Found Element By : By.xpath: //li[@id='Lead_Tab']]]>
+    </line>
+    <line>
+      <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //li[@id='Lead_Tab']]]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //li[@id='Lead_Tab']]]]>
+    </line>
+    <line>
+      <![CDATA[Trying to find Element By : By.xpath: //a[@id='tryLexDialogX']]]>
+    </line>
+    <line>
+      <![CDATA[Exception occured: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@id='tryLexDialogX']"}
+  (Session info: chrome=79.0.3945.117)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'IDELIVER20-PC', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\IDELIV~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54907}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ac30665454598942fd09c9d43d723334
+*** Element info: {Using=xpath, value=//a[@id='tryLexDialogX']}]]>
+    </line>
+    <line>
+      <![CDATA[Trying to find Element By : By.xpath: //input[@name='new']]]>
+    </line>
+    <line>
+      <![CDATA[Found Element By : By.xpath: //input[@name='new']]]>
+    </line>
+    <line>
+      <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //input[@name='new']]]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //input[@name='new']]]]>
+    </line>
+    <line>
+      <![CDATA[Trying to find Element By : By.xpath: //input[@id='name_firstlea2']]]>
+    </line>
+    <line>
+      <![CDATA[Found Element By : By.xpath: //input[@id='name_firstlea2']]]>
+    </line>
+    <line>
+      <![CDATA[Trying to find Element By : By.xpath: //input[@id='name_firstlea2']]]>
+    </line>
+    <line>
+      <![CDATA[Found Element By : By.xpath: //input[@id='name_firstlea2']]]>
+    </line>
+    <line>
+      <![CDATA[Trying to find Element By : By.xpath: //input[@id='name_lastlea2']]]>
+    </line>
+    <line>
+      <![CDATA[Found Element By : By.xpath: //input[@id='name_lastlea2']]]>
+    </line>
+    <line>
+      <![CDATA[Trying to find Element By : By.xpath: //input[@id='lea20']]]>
+    </line>
+    <line>
+      <![CDATA[Found Element By : By.xpath: //input[@id='lea20']]]>
+    </line>
+    <line>
+      <![CDATA[Trying to find Element By : By.xpath: //input[@id='lea3']]]>
+    </line>
+    <line>
+      <![CDATA[Found Element By : By.xpath: //input[@id='lea3']]]>
+    </line>
+    <line>
+      <![CDATA[Trying to find Element By : By.xpath: //select[@id='lea13']]]>
+    </line>
+    <line>
+      <![CDATA[Found Element By : By.xpath: //select[@id='lea13']]]>
+    </line>
+    <line>
+      <![CDATA[Trying to find Element By : By.xpath: //select[@id='lea13']]]>
+    </line>
+    <line>
+      <![CDATA[Found Element By : By.xpath: //select[@id='lea13']]]>
+    </line>
+    <line>
+      <![CDATA[Trying to find Element By : By.xpath: //select[@id='lea13']]]>
+    </line>
+    <line>
+      <![CDATA[Found Element By : By.xpath: //select[@id='lea13']]]>
+    </line>
+    <line>
+      <![CDATA[Trying to find Element By : By.xpath: .//option[@value = "Open - Not Contacted"]]]>
+    </line>
+    <line>
+      <![CDATA[Found Element By : By.xpath: .//option[@value = "Open - Not Contacted"]]]>
+    </line>
+    <line>
+      <![CDATA[Trying to find Element By : By.xpath: //td[@id='bottomButtonRow']/input[@title='Save']]]>
+    </line>
+    <line>
+      <![CDATA[Found Element By : By.xpath: //td[@id='bottomButtonRow']/input[@title='Save']]]>
+    </line>
+    <line>
+      <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //td[@id='bottomButtonRow']/input[@title='Save']]]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //td[@id='bottomButtonRow']/input[@title='Save']]]]>
+    </line>
+    <line>
+      <![CDATA[Trying to find Element By : By.xpath: //div[@class='textBlock']/h2]]>
+    </line>
+    <line>
+      <![CDATA[Found Element By : By.xpath: //div[@class='textBlock']/h2]]>
+    </line>
+    <line>
+      <![CDATA[Trying to find Element By : By.xpath: //td[@id='topButtonRow']//input[@name='convert']]]>
+    </line>
+    <line>
+      <![CDATA[Found Element By : By.xpath: //td[@id='topButtonRow']//input[@name='convert']]]>
+    </line>
+    <line>
+      <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //td[@id='topButtonRow']//input[@name='convert']]]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //td[@id='topButtonRow']//input[@name='convert']]]]>
+    </line>
+    <line>
+      <![CDATA[Trying to find Element By : By.xpath: //input[@id='tsk5_fu']]]>
+    </line>
+    <line>
+      <![CDATA[Found Element By : By.xpath: //input[@id='tsk5_fu']]]>
+    </line>
+    <line>
+      <![CDATA[Trying to find Element By : By.xpath:  //td[@id='topButtonRow']//input[@name='save']]]>
+    </line>
+    <line>
+      <![CDATA[Found Element By : By.xpath:  //td[@id='topButtonRow']//input[@name='save']]]>
+    </line>
+    <line>
+      <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath:  //td[@id='topButtonRow']//input[@name='save']]]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath:  //td[@id='topButtonRow']//input[@name='save']]]]>
+    </line>
+    <line>
+      <![CDATA[Trying to find Element By : By.xpath:  //h2[@class='topName']]]>
+    </line>
+    <line>
+      <![CDATA[Found Element By : By.xpath:  //h2[@class='topName']]]>
+    </line>
+    <line>
+      <![CDATA[Account Number - iDeliver10492020054910]]>
+    </line>
+    <line>
+      <![CDATA[-----------------------ContratTest--------------]]>
+    </line>
+    <line>
+      <![CDATA[Trying to find Element By : By.xpath: //li[@id='Contract_Tab']//a[contains(text(),'Contracts')]]]>
+    </line>
+    <line>
+      <![CDATA[Found Element By : By.xpath: //li[@id='Contract_Tab']//a[contains(text(),'Contracts')]]]>
+    </line>
+    <line>
+      <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //li[@id='Contract_Tab']//a[contains(text(),'Contracts')]]]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //li[@id='Contract_Tab']//a[contains(text(),'Contracts')]]]]>
+    </line>
+    <line>
+      <![CDATA[Trying to find Element By : By.xpath: //input[@name='new']]]>
+    </line>
+    <line>
+      <![CDATA[Found Element By : By.xpath: //input[@name='new']]]>
+    </line>
+    <line>
+      <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //input[@name='new']]]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //input[@name='new']]]]>
+    </line>
+    <line>
+      <![CDATA[Trying to find Element By : By.xpath:  //input[@id='ctrc7']]]>
+    </line>
+    <line>
+      <![CDATA[Found Element By : By.xpath:  //input[@id='ctrc7']]]>
+    </line>
+    <line>
+      <![CDATA[Trying to find Element By : By.xpath:  //input[@id='ctrc5']]]>
+    </line>
+    <line>
+      <![CDATA[Found Element By : By.xpath:  //input[@id='ctrc5']]]>
+    </line>
+    <line>
+      <![CDATA[Trying to find Element By : By.xpath: //input[@id='ctrc40']]]>
+    </line>
+    <line>
+      <![CDATA[Found Element By : By.xpath: //input[@id='ctrc40']]]>
+    </line>
+    <line>
+      <![CDATA[Trying to find Element By : By.xpath: //td[@id='topButtonRow']//input[@name='save']]]>
+    </line>
+    <line>
+      <![CDATA[Found Element By : By.xpath: //td[@id='topButtonRow']//input[@name='save']]]>
+    </line>
+    <line>
+      <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //td[@id='topButtonRow']//input[@name='save']]]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //td[@id='topButtonRow']//input[@name='save']]]]>
+    </line>
+    <line>
+      <![CDATA[Trying to find Element By : By.xpath: //h2[@class='pageDescription']]]>
+    </line>
+    <line>
+      <![CDATA[Found Element By : By.xpath: //h2[@class='pageDescription']]]>
+    </line>
+    <line>
+      <![CDATA[Contract Number - 00000129]]>
+    </line>
+    <line>
+      <![CDATA[-----------------------OrderTest--------------]]>
+    </line>
+    <line>
+      <![CDATA[Trying to find Element By : By.xpath: //li[@id='Order_Tab']//a[contains(text(),'Orders')]]]>
+    </line>
+    <line>
+      <![CDATA[Found Element By : By.xpath: //li[@id='Order_Tab']//a[contains(text(),'Orders')]]]>
+    </line>
+    <line>
+      <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //li[@id='Order_Tab']//a[contains(text(),'Orders')]]]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //li[@id='Order_Tab']//a[contains(text(),'Orders')]]]]>
+    </line>
+    <line>
+      <![CDATA[Trying to find Element By : By.xpath: //input[@name='new']]]>
+    </line>
+    <line>
+      <![CDATA[Found Element By : By.xpath: //input[@name='new']]]>
+    </line>
+    <line>
+      <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //input[@name='new']]]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //input[@name='new']]]]>
+    </line>
+    <line>
+      <![CDATA[Trying to find Element By : By.xpath: //input[@id='accid']]]>
+    </line>
+    <line>
+      <![CDATA[Found Element By : By.xpath: //input[@id='accid']]]>
+    </line>
+    <line>
+      <![CDATA[Trying to find Element By : By.xpath: //input[@id='Contract']]]>
+    </line>
+    <line>
+      <![CDATA[Found Element By : By.xpath: //input[@id='Contract']]]>
+    </line>
+    <line>
+      <![CDATA[Trying to find Element By : By.xpath: //input[@id='EffectiveDate']]]>
+    </line>
+    <line>
+      <![CDATA[Found Element By : By.xpath: //input[@id='EffectiveDate']]]>
+    </line>
+    <line>
+      <![CDATA[Trying to find Element By : By.xpath: //td[@id='topButtonRow']//input[@name='save']]]>
+    </line>
+    <line>
+      <![CDATA[Found Element By : By.xpath: //td[@id='topButtonRow']//input[@name='save']]]>
+    </line>
+    <line>
+      <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //td[@id='topButtonRow']//input[@name='save']]]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //td[@id='topButtonRow']//input[@name='save']]]]>
+    </line>
+    <line>
+      <![CDATA[Trying to find Element By : By.xpath: //h1[@class='noSecondHeader pageType']]]>
+    </line>
+    <line>
+      <![CDATA[Found Element By : By.xpath: //h1[@class='noSecondHeader pageType']]]>
+    </line>
+    <line>
+      <![CDATA[Order Number - Order 00000133]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="182379" started-at="2020-01-09T13:50:29Z" finished-at="2020-01-09T13:53:31Z">
+  <suite name="Default suite" duration-ms="137461" started-at="2020-01-10T12:17:19Z" finished-at="2020-01-10T12:19:37Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="182379" started-at="2020-01-09T13:50:29Z" finished-at="2020-01-09T13:53:31Z">
+    <test name="Default test" duration-ms="137461" started-at="2020-01-10T12:17:19Z" finished-at="2020-01-10T12:19:37Z">
       <class name="com.salesforce.qa.testcases.LoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.salesforce.qa.testcases.LoginPageTest@475530b9]" name="setUp" is-config="true" duration-ms="28803" started-at="2020-01-09T19:20:29Z" finished-at="2020-01-09T19:20:58Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.salesforce.qa.testcases.LoginPageTest@8e24743]" name="setUp" is-config="true" duration-ms="14956" started-at="2020-01-10T17:47:19Z" finished-at="2020-01-10T17:47:34Z">
           <reporter-output>
+            <line>
+              <![CDATA[Before navigating to: 'https://login.salesforce.com/?locale=in']]>
+            </line>
+            <line>
+              <![CDATA[Navigated to:'https://login.salesforce.com/?locale=in']]>
+            </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="LoginTest()[pri:1, instance:com.salesforce.qa.testcases.LoginPageTest@475530b9]" name="LoginTest" duration-ms="70196" started-at="2020-01-09T19:20:58Z" finished-at="2020-01-09T19:22:08Z">
+        <test-method status="PASS" signature="LoginTest()[pri:1, instance:com.salesforce.qa.testcases.LoginPageTest@8e24743]" name="LoginTest" duration-ms="56719" started-at="2020-01-10T17:47:34Z" finished-at="2020-01-10T17:48:31Z">
           <reporter-output>
+            <line>
+              <![CDATA[-----------------------LoginTest--------------]]>
+            </line>
+            <line>
+              <![CDATA[Logging testing with username - rpatestuser33@yopmail.com]]>
+            </line>
+            <line>
+              <![CDATA[Logging testing with password - iDeliver123]]>
+            </line>
+            <line>
+              <![CDATA[Trying to find Element By : By.xpath: //input[@id='username']]]>
+            </line>
+            <line>
+              <![CDATA[Found Element By : By.xpath: //input[@id='username']]]>
+            </line>
+            <line>
+              <![CDATA[Trying to find Element By : By.xpath: //input[@id='password']]]>
+            </line>
+            <line>
+              <![CDATA[Found Element By : By.xpath: //input[@id='password']]]>
+            </line>
+            <line>
+              <![CDATA[Trying to find Element By : By.xpath: //input[@id='Login']]]>
+            </line>
+            <line>
+              <![CDATA[Found Element By : By.xpath: //input[@id='Login']]]>
+            </line>
+            <line>
+              <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //input[@id='Login']]]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //input[@id='Login']]]]>
+            </line>
+            <line>
+              <![CDATA[Before navigating to: 'http://www.yopmail.com/en/']]>
+            </line>
+            <line>
+              <![CDATA[Navigated to:'http://www.yopmail.com/en/']]>
+            </line>
+            <line>
+              <![CDATA[Trying to find Element By : By.xpath: //input[@id='login']]]>
+            </line>
+            <line>
+              <![CDATA[Found Element By : By.xpath: //input[@id='login']]]>
+            </line>
+            <line>
+              <![CDATA[Trying to find Element By : By.xpath: //input[@class='sbut']]]>
+            </line>
+            <line>
+              <![CDATA[Found Element By : By.xpath: //input[@class='sbut']]]>
+            </line>
+            <line>
+              <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (f2fb8d842f48a136224d1d96cc85042d)] -> xpath: //input[@class='sbut']]]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (f2fb8d842f48a136224d1d96cc85042d)] -> xpath: //input[@class='sbut']]]]>
+            </line>
+            <line>
+              <![CDATA[Trying to find Element By : By.xpath: //div[@id='mailmillieu']/div[2]]]>
+            </line>
+            <line>
+              <![CDATA[Found Element By : By.xpath: //div[@id='mailmillieu']/div[2]]]>
+            </line>
+            <line>
+              <![CDATA[Trying to find Element By : By.xpath: //input[@id='emc']]]>
+            </line>
+            <line>
+              <![CDATA[Found Element By : By.xpath: //input[@id='emc']]]>
+            </line>
+            <line>
+              <![CDATA[Trying to find Element By : By.xpath: //input[@id='save']]]>
+            </line>
+            <line>
+              <![CDATA[Found Element By : By.xpath: //input[@id='save']]]>
+            </line>
+            <line>
+              <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //input[@id='save']]]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //input[@id='save']]]]>
+            </line>
+            <line>
+              <![CDATA[Successful logging with username -  rpatestuser33@yopmail.com]]>
+            </line>
           </reporter-output>
         </test-method> <!-- LoginTest -->
-        <test-method status="PASS" signature="Flush()[pri:0, instance:com.salesforce.qa.testcases.LoginPageTest@475530b9]" name="Flush" is-config="true" duration-ms="3024" started-at="2020-01-09T19:22:08Z" finished-at="2020-01-09T19:22:11Z">
+        <test-method status="PASS" signature="CampaignsTest()[pri:2, instance:com.salesforce.qa.testcases.LoginPageTest@8e24743]" name="CampaignsTest" duration-ms="9718" started-at="2020-01-10T17:48:31Z" finished-at="2020-01-10T17:48:41Z">
           <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Flush -->
-        <test-method status="PASS" signature="CampaignsTest()[pri:2, instance:com.salesforce.qa.testcases.LoginPageTest@475530b9]" name="CampaignsTest" duration-ms="29371" started-at="2020-01-09T19:22:11Z" finished-at="2020-01-09T19:22:41Z">
-          <reporter-output>
+            <line>
+              <![CDATA[-----------------------CampaignsTest--------------]]>
+            </line>
+            <line>
+              <![CDATA[Trying to find Element By : By.xpath: //li[@id='Campaign_Tab']]]>
+            </line>
+            <line>
+              <![CDATA[Found Element By : By.xpath: //li[@id='Campaign_Tab']]]>
+            </line>
+            <line>
+              <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //li[@id='Campaign_Tab']]]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //li[@id='Campaign_Tab']]]]>
+            </line>
+            <line>
+              <![CDATA[Trying to find Element By : By.xpath: //a[@id='tryLexDialogX']]]>
+            </line>
+            <line>
+              <![CDATA[Found Element By : By.xpath: //a[@id='tryLexDialogX']]]>
+            </line>
+            <line>
+              <![CDATA[Trying to find Element By : By.xpath: //a[@id='tryLexDialogX']]]>
+            </line>
+            <line>
+              <![CDATA[Found Element By : By.xpath: //a[@id='tryLexDialogX']]]>
+            </line>
+            <line>
+              <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //a[@id='tryLexDialogX']]]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //a[@id='tryLexDialogX']]]]>
+            </line>
+            <line>
+              <![CDATA[Trying to find Element By : By.xpath: //input[@title='New']]]>
+            </line>
+            <line>
+              <![CDATA[Found Element By : By.xpath: //input[@title='New']]]>
+            </line>
+            <line>
+              <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //input[@title='New']]]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //input[@title='New']]]]>
+            </line>
+            <line>
+              <![CDATA[Trying to find Element By : By.xpath: //input[@id='cpn1']]]>
+            </line>
+            <line>
+              <![CDATA[Found Element By : By.xpath: //input[@id='cpn1']]]>
+            </line>
+            <line>
+              <![CDATA[Trying to find Element By : By.xpath: //input[@id='cpn1']]]>
+            </line>
+            <line>
+              <![CDATA[Found Element By : By.xpath: //input[@id='cpn1']]]>
+            </line>
+            <line>
+              <![CDATA[Trying to find Element By : By.xpath: //input[@id='cpn5']]]>
+            </line>
+            <line>
+              <![CDATA[Found Element By : By.xpath: //input[@id='cpn5']]]>
+            </line>
+            <line>
+              <![CDATA[Trying to find Element By : By.xpath: //td[@id='bottomButtonRow']/input[@title='Save']]]>
+            </line>
+            <line>
+              <![CDATA[Found Element By : By.xpath: //td[@id='bottomButtonRow']/input[@title='Save']]]>
+            </line>
+            <line>
+              <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //td[@id='bottomButtonRow']/input[@title='Save']]]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //td[@id='bottomButtonRow']/input[@title='Save']]]]>
+            </line>
+            <line>
+              <![CDATA[Trying to find Element By : By.xpath: //td[@id='cpn16_ilecell']]]>
+            </line>
+            <line>
+              <![CDATA[Found Element By : By.xpath: //td[@id='cpn16_ilecell']]]>
+            </line>
+            <line>
+              <![CDATA[Trying to find Element By : By.xpath: //td[@id='cpn16_ilecell']]]>
+            </line>
+            <line>
+              <![CDATA[Found Element By : By.xpath: //td[@id='cpn16_ilecell']]]>
+            </line>
+            <line>
+              <![CDATA[Trying to find Element By : By.xpath: //input[@id='cpn16']]]>
+            </line>
+            <line>
+              <![CDATA[Found Element By : By.xpath: //input[@id='cpn16']]]>
+            </line>
+            <line>
+              <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //input[@id='cpn16']]]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //input[@id='cpn16']]]]>
+            </line>
+            <line>
+              <![CDATA[Trying to find Element By : By.xpath: //td[@id='topButtonRow']//input[@name='inlineEditSave']]]>
+            </line>
+            <line>
+              <![CDATA[Found Element By : By.xpath: //td[@id='topButtonRow']//input[@name='inlineEditSave']]]>
+            </line>
+            <line>
+              <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //td[@id='topButtonRow']//input[@name='inlineEditSave']]]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //td[@id='topButtonRow']//input[@name='inlineEditSave']]]]>
+            </line>
+            <line>
+              <![CDATA[Campaign Number - Campigan10482020054835]]>
+            </line>
           </reporter-output>
         </test-method> <!-- CampaignsTest -->
-        <test-method status="PASS" signature="Flush()[pri:0, instance:com.salesforce.qa.testcases.LoginPageTest@475530b9]" name="Flush" is-config="true" duration-ms="86" started-at="2020-01-09T19:22:41Z" finished-at="2020-01-09T19:22:41Z">
+        <test-method status="PASS" signature="LeadTest()[pri:3, instance:com.salesforce.qa.testcases.LoginPageTest@8e24743]" name="LeadTest" duration-ms="39878" started-at="2020-01-10T17:48:41Z" finished-at="2020-01-10T17:49:21Z">
           <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Flush -->
-        <test-method status="PASS" signature="LeadTest()[pri:3, instance:com.salesforce.qa.testcases.LoginPageTest@475530b9]" name="LeadTest" duration-ms="40427" started-at="2020-01-09T19:22:41Z" finished-at="2020-01-09T19:23:21Z">
-          <reporter-output>
+            <line>
+              <![CDATA[-----------------------LeadTest--------------]]>
+            </line>
+            <line>
+              <![CDATA[Trying to find Element By : By.xpath: //li[@id='Lead_Tab']]]>
+            </line>
+            <line>
+              <![CDATA[Found Element By : By.xpath: //li[@id='Lead_Tab']]]>
+            </line>
+            <line>
+              <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //li[@id='Lead_Tab']]]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //li[@id='Lead_Tab']]]]>
+            </line>
+            <line>
+              <![CDATA[Trying to find Element By : By.xpath: //a[@id='tryLexDialogX']]]>
+            </line>
+            <line>
+              <![CDATA[Exception occured: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@id='tryLexDialogX']"}
+  (Session info: chrome=79.0.3945.117)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'IDELIVER20-PC', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\IDELIV~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54907}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ac30665454598942fd09c9d43d723334
+*** Element info: {Using=xpath, value=//a[@id='tryLexDialogX']}]]>
+            </line>
+            <line>
+              <![CDATA[Trying to find Element By : By.xpath: //input[@name='new']]]>
+            </line>
+            <line>
+              <![CDATA[Found Element By : By.xpath: //input[@name='new']]]>
+            </line>
+            <line>
+              <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //input[@name='new']]]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //input[@name='new']]]]>
+            </line>
+            <line>
+              <![CDATA[Trying to find Element By : By.xpath: //input[@id='name_firstlea2']]]>
+            </line>
+            <line>
+              <![CDATA[Found Element By : By.xpath: //input[@id='name_firstlea2']]]>
+            </line>
+            <line>
+              <![CDATA[Trying to find Element By : By.xpath: //input[@id='name_firstlea2']]]>
+            </line>
+            <line>
+              <![CDATA[Found Element By : By.xpath: //input[@id='name_firstlea2']]]>
+            </line>
+            <line>
+              <![CDATA[Trying to find Element By : By.xpath: //input[@id='name_lastlea2']]]>
+            </line>
+            <line>
+              <![CDATA[Found Element By : By.xpath: //input[@id='name_lastlea2']]]>
+            </line>
+            <line>
+              <![CDATA[Trying to find Element By : By.xpath: //input[@id='lea20']]]>
+            </line>
+            <line>
+              <![CDATA[Found Element By : By.xpath: //input[@id='lea20']]]>
+            </line>
+            <line>
+              <![CDATA[Trying to find Element By : By.xpath: //input[@id='lea3']]]>
+            </line>
+            <line>
+              <![CDATA[Found Element By : By.xpath: //input[@id='lea3']]]>
+            </line>
+            <line>
+              <![CDATA[Trying to find Element By : By.xpath: //select[@id='lea13']]]>
+            </line>
+            <line>
+              <![CDATA[Found Element By : By.xpath: //select[@id='lea13']]]>
+            </line>
+            <line>
+              <![CDATA[Trying to find Element By : By.xpath: //select[@id='lea13']]]>
+            </line>
+            <line>
+              <![CDATA[Found Element By : By.xpath: //select[@id='lea13']]]>
+            </line>
+            <line>
+              <![CDATA[Trying to find Element By : By.xpath: //select[@id='lea13']]]>
+            </line>
+            <line>
+              <![CDATA[Found Element By : By.xpath: //select[@id='lea13']]]>
+            </line>
+            <line>
+              <![CDATA[Trying to find Element By : By.xpath: .//option[@value = "Open - Not Contacted"]]]>
+            </line>
+            <line>
+              <![CDATA[Found Element By : By.xpath: .//option[@value = "Open - Not Contacted"]]]>
+            </line>
+            <line>
+              <![CDATA[Trying to find Element By : By.xpath: //td[@id='bottomButtonRow']/input[@title='Save']]]>
+            </line>
+            <line>
+              <![CDATA[Found Element By : By.xpath: //td[@id='bottomButtonRow']/input[@title='Save']]]>
+            </line>
+            <line>
+              <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //td[@id='bottomButtonRow']/input[@title='Save']]]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //td[@id='bottomButtonRow']/input[@title='Save']]]]>
+            </line>
+            <line>
+              <![CDATA[Trying to find Element By : By.xpath: //div[@class='textBlock']/h2]]>
+            </line>
+            <line>
+              <![CDATA[Found Element By : By.xpath: //div[@class='textBlock']/h2]]>
+            </line>
+            <line>
+              <![CDATA[Trying to find Element By : By.xpath: //td[@id='topButtonRow']//input[@name='convert']]]>
+            </line>
+            <line>
+              <![CDATA[Found Element By : By.xpath: //td[@id='topButtonRow']//input[@name='convert']]]>
+            </line>
+            <line>
+              <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //td[@id='topButtonRow']//input[@name='convert']]]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //td[@id='topButtonRow']//input[@name='convert']]]]>
+            </line>
+            <line>
+              <![CDATA[Trying to find Element By : By.xpath: //input[@id='tsk5_fu']]]>
+            </line>
+            <line>
+              <![CDATA[Found Element By : By.xpath: //input[@id='tsk5_fu']]]>
+            </line>
+            <line>
+              <![CDATA[Trying to find Element By : By.xpath:  //td[@id='topButtonRow']//input[@name='save']]]>
+            </line>
+            <line>
+              <![CDATA[Found Element By : By.xpath:  //td[@id='topButtonRow']//input[@name='save']]]>
+            </line>
+            <line>
+              <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath:  //td[@id='topButtonRow']//input[@name='save']]]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath:  //td[@id='topButtonRow']//input[@name='save']]]]>
+            </line>
+            <line>
+              <![CDATA[Trying to find Element By : By.xpath:  //h2[@class='topName']]]>
+            </line>
+            <line>
+              <![CDATA[Found Element By : By.xpath:  //h2[@class='topName']]]>
+            </line>
+            <line>
+              <![CDATA[Account Number - iDeliver10492020054910]]>
+            </line>
           </reporter-output>
         </test-method> <!-- LeadTest -->
-        <test-method status="PASS" signature="Flush()[pri:0, instance:com.salesforce.qa.testcases.LoginPageTest@475530b9]" name="Flush" is-config="true" duration-ms="59" started-at="2020-01-09T19:23:21Z" finished-at="2020-01-09T19:23:21Z">
+        <test-method status="PASS" signature="ContratTest()[pri:4, instance:com.salesforce.qa.testcases.LoginPageTest@8e24743]" name="ContratTest" duration-ms="5526" started-at="2020-01-10T17:49:21Z" finished-at="2020-01-10T17:49:26Z">
           <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Flush -->
-        <test-method status="PASS" signature="ContratTest()[pri:4, instance:com.salesforce.qa.testcases.LoginPageTest@475530b9]" name="ContratTest" duration-ms="5311" started-at="2020-01-09T19:23:21Z" finished-at="2020-01-09T19:23:26Z">
-          <reporter-output>
+            <line>
+              <![CDATA[-----------------------ContratTest--------------]]>
+            </line>
+            <line>
+              <![CDATA[Trying to find Element By : By.xpath: //li[@id='Contract_Tab']//a[contains(text(),'Contracts')]]]>
+            </line>
+            <line>
+              <![CDATA[Found Element By : By.xpath: //li[@id='Contract_Tab']//a[contains(text(),'Contracts')]]]>
+            </line>
+            <line>
+              <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //li[@id='Contract_Tab']//a[contains(text(),'Contracts')]]]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //li[@id='Contract_Tab']//a[contains(text(),'Contracts')]]]]>
+            </line>
+            <line>
+              <![CDATA[Trying to find Element By : By.xpath: //input[@name='new']]]>
+            </line>
+            <line>
+              <![CDATA[Found Element By : By.xpath: //input[@name='new']]]>
+            </line>
+            <line>
+              <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //input[@name='new']]]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //input[@name='new']]]]>
+            </line>
+            <line>
+              <![CDATA[Trying to find Element By : By.xpath:  //input[@id='ctrc7']]]>
+            </line>
+            <line>
+              <![CDATA[Found Element By : By.xpath:  //input[@id='ctrc7']]]>
+            </line>
+            <line>
+              <![CDATA[Trying to find Element By : By.xpath:  //input[@id='ctrc5']]]>
+            </line>
+            <line>
+              <![CDATA[Found Element By : By.xpath:  //input[@id='ctrc5']]]>
+            </line>
+            <line>
+              <![CDATA[Trying to find Element By : By.xpath: //input[@id='ctrc40']]]>
+            </line>
+            <line>
+              <![CDATA[Found Element By : By.xpath: //input[@id='ctrc40']]]>
+            </line>
+            <line>
+              <![CDATA[Trying to find Element By : By.xpath: //td[@id='topButtonRow']//input[@name='save']]]>
+            </line>
+            <line>
+              <![CDATA[Found Element By : By.xpath: //td[@id='topButtonRow']//input[@name='save']]]>
+            </line>
+            <line>
+              <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //td[@id='topButtonRow']//input[@name='save']]]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //td[@id='topButtonRow']//input[@name='save']]]]>
+            </line>
+            <line>
+              <![CDATA[Trying to find Element By : By.xpath: //h2[@class='pageDescription']]]>
+            </line>
+            <line>
+              <![CDATA[Found Element By : By.xpath: //h2[@class='pageDescription']]]>
+            </line>
+            <line>
+              <![CDATA[Contract Number - 00000129]]>
+            </line>
           </reporter-output>
         </test-method> <!-- ContratTest -->
-        <test-method status="PASS" signature="Flush()[pri:0, instance:com.salesforce.qa.testcases.LoginPageTest@475530b9]" name="Flush" is-config="true" duration-ms="70" started-at="2020-01-09T19:23:26Z" finished-at="2020-01-09T19:23:27Z">
+        <test-method status="PASS" signature="OrderTest()[pri:5, instance:com.salesforce.qa.testcases.LoginPageTest@8e24743]" name="OrderTest" duration-ms="4883" started-at="2020-01-10T17:49:26Z" finished-at="2020-01-10T17:49:31Z">
           <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Flush -->
-        <test-method status="PASS" signature="OrderTest()[pri:5, instance:com.salesforce.qa.testcases.LoginPageTest@475530b9]" name="OrderTest" duration-ms="4806" started-at="2020-01-09T19:23:27Z" finished-at="2020-01-09T19:23:31Z">
-          <reporter-output>
+            <line>
+              <![CDATA[-----------------------OrderTest--------------]]>
+            </line>
+            <line>
+              <![CDATA[Trying to find Element By : By.xpath: //li[@id='Order_Tab']//a[contains(text(),'Orders')]]]>
+            </line>
+            <line>
+              <![CDATA[Found Element By : By.xpath: //li[@id='Order_Tab']//a[contains(text(),'Orders')]]]>
+            </line>
+            <line>
+              <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //li[@id='Order_Tab']//a[contains(text(),'Orders')]]]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //li[@id='Order_Tab']//a[contains(text(),'Orders')]]]]>
+            </line>
+            <line>
+              <![CDATA[Trying to find Element By : By.xpath: //input[@name='new']]]>
+            </line>
+            <line>
+              <![CDATA[Found Element By : By.xpath: //input[@name='new']]]>
+            </line>
+            <line>
+              <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //input[@name='new']]]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //input[@name='new']]]]>
+            </line>
+            <line>
+              <![CDATA[Trying to find Element By : By.xpath: //input[@id='accid']]]>
+            </line>
+            <line>
+              <![CDATA[Found Element By : By.xpath: //input[@id='accid']]]>
+            </line>
+            <line>
+              <![CDATA[Trying to find Element By : By.xpath: //input[@id='Contract']]]>
+            </line>
+            <line>
+              <![CDATA[Found Element By : By.xpath: //input[@id='Contract']]]>
+            </line>
+            <line>
+              <![CDATA[Trying to find Element By : By.xpath: //input[@id='EffectiveDate']]]>
+            </line>
+            <line>
+              <![CDATA[Found Element By : By.xpath: //input[@id='EffectiveDate']]]>
+            </line>
+            <line>
+              <![CDATA[Trying to find Element By : By.xpath: //td[@id='topButtonRow']//input[@name='save']]]>
+            </line>
+            <line>
+              <![CDATA[Found Element By : By.xpath: //td[@id='topButtonRow']//input[@name='save']]]>
+            </line>
+            <line>
+              <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //td[@id='topButtonRow']//input[@name='save']]]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (ac30665454598942fd09c9d43d723334)] -> xpath: //td[@id='topButtonRow']//input[@name='save']]]]>
+            </line>
+            <line>
+              <![CDATA[Trying to find Element By : By.xpath: //h1[@class='noSecondHeader pageType']]]>
+            </line>
+            <line>
+              <![CDATA[Found Element By : By.xpath: //h1[@class='noSecondHeader pageType']]]>
+            </line>
+            <line>
+              <![CDATA[Order Number - Order 00000133]]>
+            </line>
           </reporter-output>
         </test-method> <!-- OrderTest -->
-        <test-method status="PASS" signature="Flush()[pri:0, instance:com.salesforce.qa.testcases.LoginPageTest@475530b9]" name="Flush" is-config="true" duration-ms="88" started-at="2020-01-09T19:23:31Z" finished-at="2020-01-09T19:23:31Z">
+        <test-method status="PASS" signature="Flush()[pri:0, instance:com.salesforce.qa.testcases.LoginPageTest@8e24743]" name="Flush" is-config="true" duration-ms="5744" started-at="2020-01-10T17:49:31Z" finished-at="2020-01-10T17:49:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Flush -->

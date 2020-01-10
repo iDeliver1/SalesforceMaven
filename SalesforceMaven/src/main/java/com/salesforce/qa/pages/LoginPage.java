@@ -60,6 +60,9 @@ public class LoginPage extends TestBase {
 		
 		public HomePage login(String usr, String pwd) throws Throwable 
 		{
+			log("Logging testing with username - "+usr);
+			log("Logging testing with password - "+pwd);
+			
 			Username.sendKeys(usr);
 			Password.sendKeys(pwd);
 			Signin.click();	
@@ -69,7 +72,13 @@ public class LoginPage extends TestBase {
 				String code = 		objOTP.getotp(usr);
 				OTPText.sendKeys(code);
 				Save.click();
+				
 				Reporting("Pass", "Yotp is "+code);
+				
+				Reporting("Pass", "Successful logging with username -  "+usr);
+				
+				log("Successful logging with username -  "+usr);
+				
 				return new HomePage();
 
 			}else{

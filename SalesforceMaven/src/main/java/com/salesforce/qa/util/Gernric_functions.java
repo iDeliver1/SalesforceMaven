@@ -7,6 +7,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Properties;
+
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
@@ -15,8 +16,9 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
 import com.aventstack.extentreports.ExtentTest;
+import com.salesforce.qa.base.TestBase;
 
-public class Gernric_functions {
+public class Gernric_functions extends TestBase {
 	static String Report_Folder_path = "C:\\Reporting\\Report"+fTimestamp();
 	 public static String fTimestamp()
 		{
@@ -26,9 +28,9 @@ public class Gernric_functions {
 			return time.replace("-", "");
 		}
 		 
-	   public static String fScreenReport(WebDriver scrdriver) throws Throwable
+	   public static String fScreenReport() throws Throwable
 		{
-	    	File source_image = ((TakesScreenshot)scrdriver).getScreenshotAs(OutputType.FILE);
+	    	File source_image = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 			String Image_path = Report_Folder_path+"\\Screeshot"+fTimestamp()+".png";
 			File Desti_image = new File(Image_path);
 			FileUtils.copyFile(source_image,Desti_image);

@@ -153,11 +153,12 @@ public class LeadsPage extends TestBase {
 						
 						if(AccountHeaderName.isEmpty()){
 							Reporting("FAIL", "Unable to get Account Number" );
-							
+							log("Fail to get Account Number");
 						}
 						else
 						{
 							Reporting("PASS", "Account number is  "+AccountHeaderName);
+							log("Account Number - "+AccountHeaderName);
 							return AccountHeaderName;
 						}
 					

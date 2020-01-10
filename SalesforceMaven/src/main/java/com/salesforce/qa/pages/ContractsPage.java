@@ -48,11 +48,13 @@ WebElement ContractNo;
 			//Report
 		}
 		if(ContractNumber.isEmpty()){
-			Reporting("FAIL", "Unable to get Contract Number ");	
+			Reporting("FAIL", "Unable to get Contract Number ");
+			log("Fail to get Contract Number");
 		}
 		else
 		{
 			Reporting("PASS", "Contract  number is  "+ContractNumber);
+			log("Contract Number - "+ContractNumber);
 			return ContractNumber;
 		}
 		

@@ -6,20 +6,31 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
+import org.testng.Reporter;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.salesforce.qa.util.*;
 
 public class TestBase  {
-
+	public static final Logger log = Logger.getLogger(TestBase.class.getName());
 	public static WebDriver driver;
 	public static WebDriver yopdriver;
 	public static Properties prop;
 	public static EventFiringWebDriver e_driver;
 	public static WebEventListener eventListener;
+	static String Report_Folder_path = "C:\\Reporting\\Report"+Gernric_functions.fTimestamp();
+	ExtentHtmlReporter htmlReporter;
+	static ExtentReports extent;
 	
 	public TestBase(){
 		try {
@@ -37,7 +48,21 @@ public class TestBase  {
 		}
 	}
 	
-	
+		//the Extent report will be created only once, no matter wherever we do initialization
+			static {
+					 ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(Report_Folder_path + "\\testReport.html");
+			       extent = new ExtentReports();
+			       extent.attachReporter(htmlReporter);
+			       extent.setSystemInfo("OS", "OS");
+			       extent.setSystemInfo("Browser", "browser");
+			       //htmlReporter.config().setChartVisibilityOnOpen(true);
+			       htmlReporter.config().setDocumentTitle("Extent Report Demo");
+			       htmlReporter.config().setReportName("Test Report");
+			       //htmlReporter.config().setTestViewChartLocation(CharacterSection.TOP);
+			       htmlReporter.config().setTheme(Theme.STANDARD);
+			}
+
+	//Initiating  Browser 
 	public static void initialization(){
 		String browserName = prop.getProperty("browser");
 		
@@ -49,23 +74,21 @@ public class TestBase  {
 			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "/src/main/java/com/salesforce/qa/driver/geckodriver.exe");	
 			driver = new FirefoxDriver(); 
 		}
-		
-		
+
 		e_driver = new EventFiringWebDriver(driver);
 		// Now create object of EventListerHandler to register it with EventFiringWebDriver
 		eventListener = new WebEventListener();
 		e_driver.register(eventListener);
 		driver = e_driver;
-		
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);		
 		driver.get(prop.getProperty("url"));
-		Extent_reporter.fReport();
+	
 		
 }
-	
+	//Initiating YopMail
 	public static void Yopinitialization(){
 		String browserName = prop.getProperty("browser");
 		
@@ -92,15 +115,29 @@ public class TestBase  {
 		yopdriver.get(prop.getProperty("yopurl"));
 		
 }
+	//Logging method so that the same log is added in logger as well as syso
+		public void log(String data) {
+			
+			log.info(data);
+			Reporter.log(data);
+		}
 	
+	
+	//Getting TestName
+	public void getReportname(String Reportname){
+		Extent_reporter.CreateRoportname(Reportname,extent);
+	}
+	
+	//Creating Report 
 	public void Reporting(String Status,String StepName) throws Throwable{
-		Extent_reporter.	Report(Status, StepName);
+		Extent_reporter.Report(Status, StepName);
 		
 	}
 	
-	public void getReportname(String Reportname){
-		Extent_reporter.	CreateRoportname(Reportname);
+	
+	//Closing Browser And Saving Report 
+	public static void closeBrowser() {
+		driver.close();
+		extent.flush();
 	}
-	
-	
 }

@@ -94,6 +94,7 @@ public class CampaignsPage extends TestBase {
 				}catch(Exception E){
 					//Report
 				}
+				log("Campaign Number - "+CampignName1);
 				return CampignName1;
 		}
 		

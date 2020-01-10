@@ -53,10 +53,12 @@ String OrderNumber;
 		
 		if(OrderNumber.isEmpty()){
 			Reporting("FAIL", "Unable to get Order Number ");
+			log("Fail to get Order Number");
 		}
 		else
 		{
 			Reporting("PASS", "Order  number is  "+OrderNumber );
+			log("Order Number - "+OrderNumber);
 			return OrderNumber;
 		}
 		
